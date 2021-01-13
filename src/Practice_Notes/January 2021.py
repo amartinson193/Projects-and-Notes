@@ -20,9 +20,19 @@
 
 # Codewars challenge ---------------------------------
 
-import string 
+# import string 
 
-def is_pangram(s):
-    return all([x in s.lower() for x in string.ascii_lowercase])
-s = string.ascii_lowercase + 'BSDASDASD'
-print(is_pangram(s))
+# def is_pangram(s):
+#     return all([x in s.lower() for x in string.ascii_lowercase])
+# s = string.ascii_lowercase + 'BSDASDASD'
+# print(is_pangram(s))
+
+# Codewars challenge - Multiples of 3 or 5 - 6 kyu --------------------------------
+
+def solution(number):
+    total = 0
+    for i in range(number):
+        if (i % 3 == 0 or i % 5 == 0) and i >= 0:
+            total += i
+    return total
+print(solution(100))
