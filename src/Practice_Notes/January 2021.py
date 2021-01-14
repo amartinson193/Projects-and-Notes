@@ -51,7 +51,15 @@
 
 # Codewars challenge - Find the odd int - 6kyu --------------------------------
 
-def song_decoder(song):
-    return song.replace('WUB',' ').split(' ')
+# def song_decoder(song):
+#     return song.replace('WUB',' ').split(' ')
 
-print(song_decoder('AAWUBWUBBWUBC'))
+# print(song_decoder('AAWUBWUBBWUBC'))
+
+# Datacamp - Statistical Thinking Part 1 --------------------------------
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+plt.plot(np.random.random(10))
+plt.show()
