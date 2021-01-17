@@ -56,10 +56,92 @@
 
 # print(song_decoder('AAWUBWUBBWUBC'))
 
+# 1/14/21
+
 # Datacamp - Statistical Thinking Part 1 --------------------------------
 
-import numpy as np
-import matplotlib.pyplot as plt
+# import numpy as np
+# import matplotlib.pyplot as plt
 
-plt.plot(np.random.random(10))
-plt.show()
+# plt.plot(np.random.random(10))
+# plt.show()
+
+# Codewars - Persistent Bugger - 6kyu --------------------------------
+
+# import numpy as np
+
+# import numpy as np
+
+# def persistence(n):
+#     x = np.prod([int(i) for i in str(n)])
+#     count = 0
+#     while x > 9:
+#         x = np.prod([int(i) for i in str(x)])
+#         count += 1
+#     return count + 1 if n > 9 else 0
+
+# Random --------------------------------
+# import functools
+
+# print(functools.reduce(lambda x,y: x+y,[1,2,3]))
+
+# print({'hi':1,'bye': 2}.get(['hi','bye'],'Not Here!'))
+# s = [1,2,3]
+# print(s.index(2))
+
+# import operator 
+# import functools
+
+# s = ['hi',1]
+# print(itemgetter('hi')(s))
+
+# s = [('hi',10),('bye',5)]
+# for i in dict(s).items():
+#     print(i[0])
+# print(s.sort(key=itemgetter(1)))
+
+# x = functools.reduce(operator.add,[1,2,3],5))
+
+# Codewars Title Case -------------------------------
+
+# def title_case(title, minor_words=''):
+#     new_title = title.title()
+#     for i in new_title.split():
+#         if i.lower() in minor_words.lower().split() and new_title.split().index(i) > 0:
+#             new_title = new_title.replace(i,i.lower())
+#     return new_title
+
+# print(title_case('THE WIND IN THE WILLOWS', 'The In'))
+
+# 1/16/21
+
+import numpy as np
+
+# print(np.corrcoef([1,2,3,4,10],[1,2,3,4,5]))
+# print([1,2]*2)
+
+# arr = []
+# arr.append([1,2,3])
+# arr.append([4,5,6])
+# np_arr = np.array(arr)
+# print(np_arr)
+
+# print(np.append([1, 2, 3], [[4, 5, 6], [7, 8, 9]]))
+
+import numpy as np
+from icecream import ic
+
+arr = [1,2,3]
+for i in range(5):
+    arr = np.append(arr,[0,i])
+    ic()
+print(arr)
+
+# ls = []
+# for i in range(5):
+#     ls.append(0)
+# print(ls) 
+
+# from icecream import ic
+# ic('hello world')
+
